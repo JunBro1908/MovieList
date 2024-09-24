@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: end;
+}
+
+.poster {
+  border-radius: 20px;
+  max-width: 70%;
+  place-self: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .poster {
+    place-self: center;
+    max-width: 100%;
+  }
+
+  .info {
+    margin-top: 20px;
+  }
+}
